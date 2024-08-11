@@ -1,0 +1,24 @@
+GET http://localhost:3000/pending-orders/
+
+###
+
+POST http://localhost:3000/orders/
+Content-Type: application/json
+
+{
+    "buyer_qty": 10,
+    "buyer_price": 100
+}
+
+###
+POST http://localhost:3000/orders/
+Content-Type: application/json
+
+{
+    "seller_qty": 15,
+    "seller_price": 98
+}
+
+###
+GET http://localhost:3000/completed-orders/
+
